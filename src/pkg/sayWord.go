@@ -2,8 +2,8 @@ package sayword
 
 import "fmt" 
 
-func SayWord() {
-	var sayWord = "Monday"
+func SayWord(x string) string{
+	var sayWord string = x
 
 	switch sayWord {
 	case "Monday":
@@ -23,5 +23,7 @@ func SayWord() {
 	default:
 		fmt.Println("ไม่มีคำพูดที่ตรงกัน")
 	}
+
+	return x
 
 }
